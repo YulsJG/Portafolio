@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Jane Doe">
+    <meta name="description" content="Portafolio de desarrollo web de Jane Doe">
+    <meta name="keywords" content="HTML, CSS, JavaScript, React">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Yuliana Juarez | Tecnologias</title>
+     <!-- Favicon -->
+     <link rel="icon" type="image/x-icon" href="../imagenes/icono.png">
+     <!-- Bootstrap -->
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+     <!-- Iconos de Bootstrap -->
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+     <!-- CSS -->
+     <link id="tema" href="../style.css" rel="stylesheet">
+     <!-- Google Fonts -->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Quicksand:wght@300&display=swap" rel="stylesheet">
+</head>
+<body class="seccion-clara">
+
+    <!-- Barra de navegacion -->
+    <nav class="navbar seccion-clara navbar-expand-md navbar-light">
+        <div class="container-fluid">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-toggler" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbar-toggler">
+            <a class="navbar-brand" href="#">
+              <img src="../imagenes/icono.png" width="50" alt="Logo de la página web">
+            </a>
+            <ul class="navbar-nav d-flex justify-content-center align-items-center">
+                <li class="nav-item">
+                    <a class="nav-link" href="../index.html">Inicio</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link " href="../paginas/sobre-mi.html">
+                      <span>Sobre  mí</span>
+                      <span>
+                        <i class="fas fa-address-card" aria-hidden="true"></i>
+                      </span>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="../paginas/proyectos.html">
+                      <span>Proyectos</span>
+                      <span>
+                        <i class="fas fa-tasks" aria-hidden="true"></i> 
+                      </span>
+                    </a>            
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="../paginas/tecnologias.html">
+                      <span>Tecnologias</span>
+                      <span>
+                        <i class="fas fa-users" aria-hidden="true"></i>  
+                      </span>
+                    </a>    
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="../paginas/contacto.html">
+                      <span>Contacto</span>
+                      <span>
+                        <i class="fas fa-envelope-open-text" aria-hidden="true"></i> 
+                      </span>
+                    </a>
+                  </li>
+              <!-- MODO OSCURO -->
+              <label for="toggle" id="label_toggle"><i class="fa-sharp fa-regular fa-moon-stars"></i></label>
+              <input type="checkbox" id="toggle">
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+    <!-- Experiencia -->
+    <section class="experiencia seccion-clara">
+        <div class="container text-center">
+          <div class="row">
+            <!-- Desarrollo Web -->
+            <div class="columna col-12 col-md-4">
+              <!--<i class="bi bi-laptop"></i>-->
+              <img src="../imagenes/codificacion.png" alt="">
+              <p class="experiencia-titulo">Desarrollo Web</p>
+              <p>Diseño y creo sitios y páginas web. </p>
+              <div class="badges-contenedor">
+                <span class="badge text-bg-primary">HTML</span>
+                <span class="badge text-bg-primary">CSS</span>
+                <span class="badge text-bg-primary">JavaScript</span>
+                <!--<span class="badge text-bg-primary">React</span>-->
+              </div>
+            </div>
+            <!-- Ingeniera en Computacion --> 
+            <div class="columna col-12 col-md-4">
+              <!--<i class="bi bi-laptop"></i>-->
+              <img src="../imagenes/ingeniero-informatico.png" alt="">
+              <p class="experiencia-titulo">Ingeniera en Computación</p>
+              <p> Ingeniera en proceso.</p>
+              <div class="badges-contenedor">
+                <span class="badge text-bg-primary">EDA</span>
+                <span class="badge text-bg-primary">POO</span>
+                <span class="badge text-bg-primary">C</span>
+              </div>
+            </div>
+            <!-- Estudiante -->
+            <div class="columna col-12 col-md-4">
+              <!--<i class="bi bi-laptop"></i>-->
+              <img src="../imagenes/estudiando.png" alt="">
+              <p class="experiencia-titulo">Estudiante</p>
+              <p>Estudiante de la UNAM, y aprendiendo mas lenguajes.</p>
+              <div class="badges-contenedor">
+                <span class="badge text-bg-primary">Tecnolochicas PRO</span>
+                <span class="badge text-bg-primary">Desarrollo Web</span>
+                <span class="badge text-bg-primary">Python</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+  
+      <h2 class="header-habilidad ">My top skills</h2>
+      <section class="habilidades seccion-clara" id="habilidades">
+  
+        <div class="tarjeta-icono">
+        <div class="contenedor-habilidades">
+          <div class="first-set animate__animated animate__pulse">
+            <img src="../imagenes/html.png" alt="" loading="lazy" class="icon icon-card"/>
+            <img src="../imagenes/css.png" alt="" loading="lazy" class="icon icon-card"/>
+            <img src="../imagenes/js.png" alt="" loading="lazy" class="icon icon-card"/>
+          </div>
+          <br>
+          <div class="second-set animate__animated animate__pulse">
+            <img src="../imagenes/boostrap.png" alt="" loading="lazy" class="icon icon-card"/>
+            <img src="../imagenes/c.png" alt="" loading="lazy" class="icon icon-card"/>
+            <img src="../imagenes/java.png" alt="" loading="lazy" class="icon icon-card"/>
+          </div>
+        </div>
+      </div>
+      </section>
+  
+  
+</body>
+</html>

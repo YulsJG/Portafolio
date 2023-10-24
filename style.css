@@ -1,0 +1,585 @@
+/* Barra de navegacion */
+
+.navbar {
+  padding: 2rem;
+  background-color: #dbb6ee;
+  color: black;
+}
+.navbar-nav li{
+  margin-right: 70px;
+}
+.navbar-nav a span:first-child{
+  display: inline-block;
+  padding: 10px;
+}
+.navbar-nav a{
+  display: block;
+  position: relative;
+  overflow: hidden;
+  color: black;
+}
+.navbar-nav a span:last-child{
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: translateY(-100%);
+}
+.navbar-nav a span{
+  transition: transform 0.2s ease-out;
+}
+.navbar-nav a:hover span:first-child{
+  transform: translateY(100%);
+}
+.navbar-nav a:hover span:last-child{
+  transform: none;
+}
+.navbar-nav[data-animation="to-top"] a span:last-child {
+  transform: translateY(100%);
+}
+.navbar-nav[data-animation="to-top"] a:hover span:first-child {
+  transform: translateY(-100%);
+}
+.navbar-nav[data-animation="to-right"] a span:last-child {
+  transform: translateX(-100%);
+}
+.navbar-nav[data-animation="to-right"] a:hover span:first-child {
+  transform: translateX(100%);
+}
+.navbar-nav[data-animation="to-left"] a span:last-child {
+  transform: translateX(100%);
+}
+.navbar-nav[data-animation="to-left"] a:hover span:first-child {
+  transform: translateX(-100%);
+}
+.navbar-nav{
+  margin-right: 10%;
+  color: black;
+  justify-content: space-between;  
+}
+.navbar-collapse {
+  align-items: center;
+  justify-content: space-between;  
+  color: black;
+}
+
+/* Estilos generales */
+
+body{
+  font-family: 'Quicksand', sans-serif;
+  color: black;
+  transition: all 1.5s ease;
+  background-color: #dbb6ee;
+}
+/* Modo oscuro */
+ #label_toggle{
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  font-size: 3em;
+  color: black;
+  cursor: pointer;
+ }
+ #toggle{
+  display: none;
+ }
+
+ .dark{
+  background-color: #333;
+  color: white;
+  transition: all 1.5s ease;
+ }
+
+section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+h1 {
+  font-size: 2.5rem;
+  font-family: 'Amatic SC', sans-serif;
+  margin-right: 40%;
+  margin-top: -20%;
+}
+
+.seccion-oscura {
+  color: rgb(2, 2, 2);
+  background-color:  #b695c0;
+}
+
+.seccion-clara {
+  color: black;
+  background-color: #fff0ff;
+}
+
+.seccion-titulo {
+  font-size: 3.5rem;
+  padding: 15px 0;
+  font-family: 'Amatic SC', sans-serif;
+}
+
+.seccion-descripcion {
+  font-size: 2.2rem;
+  color: #584e4e;
+}
+
+.seccion-texto {
+  font-size: 1.2rem;
+}
+
+.btn-info {
+  font-size: 1.1rem;
+  margin: 20px;
+}
+
+.texto-negro {
+  color: black;
+}
+
+.texto-blanco {
+  color: white;
+}
+
+/* Seccion Hero */
+
+.hero {
+  /*background-image: url('https://img.freepik.com/foto-gratis/disposicion-vista-superior-material-papeleria-material-natural_23-2148898233.jpg?size=626&ext=jpg&ga=GA1.1.386372595.1697673600&semt=sph');*/
+  background-color: #dbb6ee;
+  min-height: 100%;
+  max-height: 100%;
+  text-align: center;
+}
+
+.marco{
+  border:  #7f4ca5 5px solid;
+  
+}
+.hero-principal {
+  padding:10rem;
+}
+
+.hero-imagen-desarrollador {
+  width: 30%;
+  height: 30%;
+  margin-left: 75%;
+  margin-top: -10%;
+  border: #7f4ca5  5px solid;
+  /*float: right;*/
+}
+
+.hero-principal h2 {
+  font-size: 1.5rem;
+  color: #615151;
+  margin-right: 30%;
+  
+}
+
+/* Sobre mi */
+
+.caja{
+width: 55%;
+font-size: 18px;
+font-weight: 400;
+color: #ffffff;
+background: #889ccf;
+margin: auto auto 25px;
+overflow: hidden;
+padding: -2%;
+border: #7f4ca5 2px solid;
+margin-top: 5%;
+margin-left: 18%;
+}
+.foto{
+  width: 20%;
+  margin-left: 70%;
+  margin-top: -30%;
+  border: #7f4ca5 2px solid;
+}
+.sobre-mi {
+  height: 350px;
+  padding: 10px;
+  background-color: #b695c0;
+}
+
+.sobre-mi .contenedor {
+  max-width: 600px;
+  text-align: center;
+}
+
+/* Experiencia */
+
+.experiencia {
+  padding: 40px 40px 60px 40px;
+}
+
+.experiencia .columna {
+  padding: 20px;
+  border: 2px solid #dbb6ee;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  transition: all 0.2s ease-in;
+}
+
+.experiencia .columna:hover {
+  color: white;
+  background-color: #7f4ca5;
+  position: relative;
+  top: -30%;
+}
+.experiencia .columna img{
+  width: 60%;
+}
+
+.experiencia i {
+  font-size: 2.5rem;
+  color: #93A0C6;
+  background-color: #28193D;
+  padding: 8px 19px;
+  border-radius: 50%;
+}
+
+.experiencia-titulo {
+  font-size: 25px;
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+.badges-contenedor {
+  font-size: 20px;
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+.badge {
+  margin: 5px;
+  border-radius: 20px;
+}
+
+.habilidades {
+  width: 70%;
+  margin: auto;
+  text-align: center;
+  margin-top: 2%;
+  margin-left: 10%;
+}
+
+.header-habilidad {
+  margin-bottom: 2%;
+  text-align: center;
+}
+
+.icon {
+  width: 200px;
+  padding: 5%;
+  height: 60%;
+  justify-content: center;
+  align-items: center;
+  margin-left: 40px;
+}
+.icon:hover{
+  transform: scale(1.5);
+  cursor: pointer;
+}
+
+.first-set{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+.second-set{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/*.icono {
+  width: 40px;
+  height: 40px;
+  margin: 5px;
+  justify-content: space-between;
+}*/
+
+/*.tarjeta-icono{
+  background-color: transparent;
+  border-radius: 11px;
+  box-shadow: 0 3px 10px var(--secondary-shadow);
+  padding: 50px;
+  text-align: center;
+}*/
+
+
+/* Proyectos */
+.btn{
+  background-color: #93A0C6;
+  border: #93A0C6 2px solid;
+}
+.proyectos-recientes {
+  padding: 40px;
+}
+
+.proyectos-recientes img {
+  height: 100%;
+  width: 100%;
+  padding: 10px;
+  border-radius: 10px;
+  display: block;
+  transition: all 0.2s ease;
+}
+
+.proyectos-contenedor {
+  padding-top: 60px;
+  margin-bottom: 40px;
+}
+
+.overlay {
+  transition: all 0.2s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.overlay p {
+  font-size: 25px;
+  font-weight: bold;
+  margin-bottom: 0;
+}
+
+.proyecto {
+  position: relative;
+}
+
+.proyecto:hover img {
+  opacity: 0.2;
+}
+
+.proyecto:hover .overlay {
+  opacity: 1;
+}
+
+.overlay .iconos-contenedor {
+  display: flex;
+}
+
+.overlay i {
+  color: black;
+  font-size: 60px;
+  margin: 10px;
+}
+
+
+/* Testimonios */
+
+.testimonios {
+  padding: 40px 40px 80px 40px;
+}
+
+.testimonios .carousel {
+  max-width: 800px;
+}
+
+.carousel-item {
+  height: 500px;
+}
+
+.carousel-item .container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.testimonio-imagen {
+  height: 150px;
+  width: 150px;
+  margin: 10px 10px 20px 10px;
+}
+
+.testimonio-texto {
+  max-width: 70%;
+  font-size: 20px;
+  text-align: center;
+  font-family: 'Share Tech Mono', monospace;
+}
+
+.testimonio-info {
+  font-weight: bold;
+  text-align: center;
+}
+
+.testimonio-info p {
+  margin-bottom: 0;
+}
+
+.testimonio-footer .cliente {
+  font-size: 1.2rem;
+}
+
+.testimonio-info .cargo {
+  font-size: 0.9rem;
+  color: #656060;
+}
+
+/* Contacto */
+
+.contact{
+  background-color:  #b695c0;
+}
+.contacto .container {
+  max-width: 1100px;
+  min-height: 200px;
+  padding: 20px;
+  background-color:  #b695c0;
+}
+
+.contacto .rectangulo {
+  margin-top: 10%;
+  background-color: #dbb6ee;
+  border-radius: 10px;
+  box-shadow: 0px 1px 4px 1px #93A0C6;
+}
+
+.contacto .row {
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.contacto .descripcion {
+  color: black;
+  font-size: 1.2rem;
+}
+
+.contacto button {
+  color: black;
+  font-weight: bold;
+  background-color: transparent;
+  border: 2px solid #93A0C6;
+  padding: 1.25em 2em;
+  margin: 10px;
+  border-radius: 100px;
+  transition: all 0.2s ease-in-out;
+}
+
+.contacto button:hover {
+  background-color: white;
+  color: black;
+}
+
+.contacto button i {
+  color: white;
+  font-size: 1.3rem;
+  transition: all 0.2s ease-in-out;
+}
+
+.contacto button:hover i {
+  color: black;
+}
+
+/* Pie de pagina (footer) */
+
+footer {
+  min-height: 20px; 
+  margin-top: auto;
+  width: 100%;
+    padding: 1% 0;
+}
+
+.footer-logo {
+  height: 80px;
+  width: 80px;
+  margin: 5px;
+  margin-top: 10%;
+}
+
+.footer-texto {
+  font-size: 1.5rem;
+  padding: 20px;
+  margin-bottom: 5px;
+  font-family: 'Quicksand', sans-serif;
+}
+
+.iconos-redes-sociales{
+  background-color: #dbb6ee;
+}
+.iconos-redes-sociales a {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2px;
+  margin: 10px;
+  border: 2px solid black;
+  border-radius: 50%;
+  transition: all 0.2s ease-in;
+}
+
+.iconos-redes-sociales i {
+  color: black;
+  font-size: 1.5rem;
+  transition: all 0.2s ease-in;
+}
+
+.iconos-redes-sociales a:hover {
+  background-color: #fff0ff;
+  border: 2px solid black;
+}
+
+.iconos-redes-sociales a:hover i {
+  color: black;
+}
+
+.derechos-de-autor {
+  font-size: 15px;
+  color: black;
+  padding: 20px;
+}
+
+/* Adaptable (Responsivo) */
+
+@media screen and (max-width: 400px) {
+  .overlay p {
+    font-size: 18px;
+  }
+
+  .overlay i {
+    font-size: 40px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .navbar-brand {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .testimonio-imagen {
+    height: 120px;
+    width: 120px;
+  }
+
+  .testimonio-texto {
+    font-size: 18px;
+  }
+}
+
+@media screen and (min-width: 700px) {
+  .hero-inferior-imagen {
+    max-width: 600px;
+  }
+}
